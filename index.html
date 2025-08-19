@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>塔罗占卜</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>塔罗占卜</h1>
+  <input type="text" id="userQuestion" placeholder="请输入你的困惑，例如：我是否该接受这份工作？" />
+  <button id="drawButton">开始占卜</button>
+
+  <div class="card" id="card" style="display:none;">
+    <div class="card-inner">
+      <div class="card-front">点击翻牌</div>
+      <div class="card-back" id="cardInfo"></div>
+    </div>
+  </div>
+
+  <div class="fullscreen-overlay" id="fullscreenOverlay">
+    <div class="fullscreen-content" id="fullscreenContent"></div>
+    <button class="close-btn" id="closeOverlay">关闭</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
